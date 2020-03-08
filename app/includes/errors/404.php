@@ -1,6 +1,6 @@
 <?php
     $domain = Config::get('default/domain');
-    $assets = "$domain/public";
+    $assets = "$domain";
 ?>
 <!DOCTYPE html>
 <html lang="en">

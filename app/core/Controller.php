@@ -4,16 +4,16 @@
         
         public function model($model)
         {
-            require_once 'app/models/' . $model . '.php';
+            require_once '../app/models/' . $model . '.php';
             return new $model();
         }
 
         public function view($view, $data = [])
         {
             $domain = Config::get('default/domain');
-            $assets = "$domain/public";
-            if(file_exists('app/views/' . $view . '.php')){
-                require_once 'app/views/' . $view . '.php';
+            $assets = "$domain";
+            if(file_exists('../app/views/' . $view . '.php')){
+                require_once '../app/views/' . $view . '.php';
             }else{
                 Redirect::to(404);
             }

@@ -25,7 +25,7 @@
         'default' => array(
             'project_title' => 'Fees Management',
             'project_description' => 'Fees Management system to control and manage all payments and expenses in a school',
-            'domain' => 'http://' . $_SERVER['SERVER_NAME'],
+            'domain' => 'http://' . $_SERVER['SERVER_NAME'] . ':4000',
             'profile_image' => 'profile.png',
             'logo' => 'public/images/favicon.png',
             'currency' => 'N',

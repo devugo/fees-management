@@ -1663,7 +1663,7 @@
             
             echo '</tbody>
                 </table>';
-                $assets = 'http://fees.me/public';
+                $assets = Config::get('default/domain');
                 echo '<script src="' . $assets . '/plugins/jquery/jquery.min.js"></script>';
                 echo '<script src="' . $assets . '/plugins/datatables/datatables.min.js"></script>';
                 echo '<script>

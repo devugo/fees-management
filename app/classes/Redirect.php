@@ -7,13 +7,13 @@
                     switch($location){
                         case 404:
                             header('HTTP/1.0 404 Not Found');
-                            include 'app/includes/errors/404.php';
+                            include '../app/includes/errors/404.php';
                             exit();
                         break;
 
                         case 403:
                             header('HTTP/1.0 403 Not Found');
-                            include 'app/includes/errors/403.php';
+                            include '../app/includes/errors/403.php';
                             exit();
                         break;
                     }

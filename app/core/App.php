@@ -13,7 +13,7 @@ Class App
         $router = $GLOBALS['route'];
         if(array_key_exists($url[0], $router)){
             $controller_name = $router[$url[0]];
-            if(file_exists('app/controllers/' . $controller_name . '.php'))
+            if(file_exists('../app/controllers/' . $controller_name . '.php'))
             {  
                 $this->controller = $controller_name;
                 unset($url[0]);
@@ -21,7 +21,7 @@ Class App
                 Redirect::to(404);
             }   
         }
-        require_once 'app/controllers/' . $this->controller . '.php';
+        require_once '../app/controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller;
         
         if(isset($url[1]))
