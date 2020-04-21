@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <?php $site_logo = Admin::find(1)->logo; ?>
-    <link rel="icon" type="image/png" sizes="16x16" href="<?=$this->domain()?>/<?=$site_logo?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=host()?>/<?=$site_logo?>">
     <title><?=Config::get('default/project_title')?> | School Login</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?=$assets?>/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,8 @@
     <!-- ============================================================== -->
     
     <section id="wrapper">
-        <div class="login-register" style="background-color: grey; background-image:url();">
+        <div class="login-register" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../images/background/login-register.jpg') !important;">
+        <!-- background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../../public/uploads/site_images/books.jpg"); -->
             
             <!--<div class="alert alert-success" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -50,7 +51,7 @@
 
             <div class="login-box card"><?=Session::flash('flash')?>
                 <div class="card-body">
-                    <form class="form-horizontal form-material" id="loginform" method="post" action="<?=Config::get('default/domain')?>/school-manager/authenticate">
+                    <form class="form-horizontal form-material" id="loginform" method="post" action="<?=host()?>/school-manager/authenticate">
                         <h3 class="box-title m-b-20">School Sign In</h3>
                         
                         <div class="form-group ">
@@ -79,15 +80,15 @@
                             </div>
                         </div>
                         <div class="form-group m-b-0">
-                            <div class="col-sm-12 text-center">
+                            <!-- <div class="col-sm-12 text-center">
                                 Don't have an account? <a href="<?=$this->domain()?>/register" class="text-info m-l-5"><b>Sign Up</b></a>
-                            </div>
+                            </div> -->
                             <div class="col-sm-12 text-center">
                                 Are you a guardian? <a href="<?=$this->domain()?>/login/guardian" class="text-info m-l-5"><b>Login Here</b></a>
                             </div>
                         </div>
                     </form>
-                    <form class="form-horizontal" id="recoverform" method="post" action="<?=Config::get('default/domain')?>/school-manager/forgot-password">
+                    <form class="form-horizontal" id="recoverform" method="post" action="<?=host()?>/school-manager/forgot-password">
                         <div class="form-group ">
                             <div class="col-xs-12">
                                 <h3>Recover Password</h3>

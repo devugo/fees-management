@@ -41,9 +41,9 @@ die();
 ?>
 <?php $page_title = 'Dashboard'; ?>
 
-<?php require_once 'app/views/school/includes/header.php'; ?>
+<?php require_once '../app/views/school/includes/header.php'; ?>
 
-<?php require_once 'app/views/school/includes/sidebar.php'; ?>
+<?php require_once '../app/views/school/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->

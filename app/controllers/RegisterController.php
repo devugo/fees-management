@@ -42,8 +42,8 @@
                             }*/
                             $to = Input::get('email');
                             $subject = 'Welcome Message';
-                            $txt = 'Welcome to Ofemco Bills Management System. We are glad to have you around.';
-                            $headers = "From: ofemco@gmail.com";
+                            $txt = 'Welcome to Devugo Bills Management System. We are glad to have you around.';
+                            $headers = "From: info@devugo.com";
             
                             mail($to,$subject,$txt,$headers);
                             Session::put('flash', $this->notifications('success', 'School Registered'));

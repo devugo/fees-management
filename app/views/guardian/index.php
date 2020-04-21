@@ -1,8 +1,8 @@
 <?php $page_title = 'Dashboard'; ?>
 
-<?php require_once 'app/views/guardian/includes/header.php'; ?>
+<?php require_once '../app/views/guardian/includes/header.php'; ?>
 
-<?php require_once 'app/views/guardian/includes/sidebar.php'; ?>
+<?php require_once '../app/views/guardian/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -157,4 +157,4 @@
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
            
-    <?php require_once 'app/views/guardian/includes/footer.php'; ?>
+    <?php require_once '../app/views/guardian/includes/footer.php'; ?>

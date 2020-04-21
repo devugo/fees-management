@@ -1,8 +1,8 @@
 <?php $page_title = 'View Notifications'; ?>
 
-<?php require_once 'app/views/admin/includes/header.php'; ?>
+<?php require_once '../app/views/admin/includes/header.php'; ?>
 
-<?php require_once 'app/views/admin/includes/sidebar.php'; ?>
+<?php require_once '../app/views/admin/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -101,4 +101,4 @@
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-    <?php require_once 'app/views/admin/includes/footer.php'; ?>
+    <?php require_once '../app/views/admin/includes/footer.php'; ?>

@@ -233,6 +233,8 @@ class School extends Eloquent
 
     public function login($email, $password, $remember)
     {
+        // echo 'here babe 2';
+        //             return 'got here';
         $school = self::where('email', $email)->first();
         if($school){
             $this->data = $school;

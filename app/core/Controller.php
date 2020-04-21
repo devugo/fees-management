@@ -120,7 +120,7 @@
 
         public function middleware($middleware)
         {
-			require_once 'app/middlewares/' . $middleware . '.php';
+			require_once '../app/middlewares/' . $middleware . '.php';
 			return new $middleware;
 		}
     

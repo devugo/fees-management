@@ -1,8 +1,8 @@
 <?php $page_title = 'Student'; ?>
 
-<?php require_once 'app/views/school/includes/header.php'; ?>
+<?php require_once '../app/views/school/includes/header.php'; ?>
 
-<?php require_once 'app/views/school/includes/sidebar.php'; ?>
+<?php require_once '../app/views/school/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -382,4 +382,4 @@
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-    <?php require_once 'app/views/school/includes/footer.php'; ?>
+    <?php require_once '../app/views/school/includes/footer.php'; ?>

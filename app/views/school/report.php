@@ -1,8 +1,8 @@
 <?php $page_title = 'Report'; ?>
 
-<?php require_once 'app/views/school/includes/header.php'; ?>
+<?php require_once '../app/views/school/includes/header.php'; ?>
 
-<?php require_once 'app/views/school/includes/sidebar.php'; ?>
+<?php require_once '../app/views/school/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -160,7 +160,7 @@
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-    <?php require_once 'app/views/school/includes/footer.php'; ?>
+    <?php require_once '../app/views/school/includes/footer.php'; ?>
         <script>
             $('#ugoTable thead th').each( function () {
                     var title = $(this).text();

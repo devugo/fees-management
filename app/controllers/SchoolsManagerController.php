@@ -24,16 +24,28 @@
 
                     $remember = (Input::get('remember') === 'on') ? true : false;
                     $login = $school->login(Input::get('email'), Input::get('password'), $remember);
+
+                    // if($login){
+                    //     echo 'authenticated';
+                    // }else {
+                    //     echo 'not authentiated';
+                    // }
+                    // return;
+
                     if($login){ // If authentication is 
+                        
                         $email = Input::get('email');
                         if($school->where('email', $email)->first()->blocked()){
                             Session::delete(Config::get('session/school'));
                             Session::put('flash', $this->notifications('danger', 'Account Blocked'));
                             Redirect::to('/login');
                         }
-                        Session::put('flash', $this->notifications('success', 'Login SuccessFul'));
+                        // echo Session::get(Config::get('session/school')) . '<br>';
+                        // echo 'got here'; return;
+                        Session::put('flash', $this->notifications('success', 'Login Successful'));
+                        // echo 'moving to dashboard'; return;
                         Redirect::to('/school/dashboard');
-                    }else{ // If authentication was not passed
+                    }else{ // If authentication fails
                         Session::put('flash', $this->notifications('danger', 'Invalid Credentials'));
                         Redirect::back();
                     }
@@ -63,7 +75,7 @@
                     $to = Input::get('email');
                     $subject = 'Password Reset';
                     $txt = 'Kindly visit the url or copy to your your browser to reset your password. url: http://fees.me/forgot-password/reset/' . $token;
-                    $headers = "From: ofemco@gmail.com";
+                    $headers = "From: infoo@devugo.com";
     
                     mail($to,$subject,$txt,$headers);
                     Session::put('flash', $this->notifications('success', 'Kindly check your email and follow the instruction'));

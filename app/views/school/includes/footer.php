@@ -2,7 +2,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                ©Ofemco Intl. Services <?=date("Y")?> - Developed by Devugo
+                ©Fees management <?=date("Y")?> - Developed by Devugo
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

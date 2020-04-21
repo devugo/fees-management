@@ -1,10 +1,12 @@
 <?php
 
-class HomeController extends Controller
+class FrontController extends Controller
 {
     public function index($name = '')
     {
-        
+        // header('Location: ' . '/login/guardian');
+        // ob_end_clean();
+        // exit();   
         $this->view('home/index');
 
     }
@@ -30,6 +32,19 @@ class HomeController extends Controller
         Session::delete(Config::get('session/guardian'));
         Session::put('flash', $this->notifications('success', 'Logout successfully'));
         Redirect::back();
+    }
+
+    public function test()
+    {
+        // Session::put(Config::get('session/school'), 4);
+        if(Session::exists(Config::get('session/school'))){
+            echo 'session set';
+        }else{
+            echo 'session not set';
+        }
+        
+        return;
+        $this->view('home/test');
     }
 
 

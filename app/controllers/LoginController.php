@@ -17,6 +17,12 @@
 
         public function guardian()
         {
+            // $numargs = func_num_args(); // Number of argumaents passed to the method
+            // $allArgs = func_get_args(); // Get all the arguments passed to the function
+            // $firstArg = func_get_arg(1); // Get the first argument passed to the function
+
+            //*131*106# 1000mb and 3gb bonus
+            
             if(Session::exists(Config::get('session/guardian')) || Cookie::exists(Config::get('remember/guardian'))){
                 Redirect::to('/guardian/dashboard');
             }

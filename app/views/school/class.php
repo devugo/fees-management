@@ -1,8 +1,8 @@
 <?php $page_title = 'Class'; ?>
 
-<?php require_once 'app/views/school/includes/header.php'; ?>
+<?php require_once '../app/views/school/includes/header.php'; ?>
 
-<?php require_once 'app/views/school/includes/sidebar.php'; ?>
+<?php require_once '../app/views/school/includes/sidebar.php'; ?>
 
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
@@ -61,7 +61,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Add Class</h4>
-                                <form class="form-horizontal p-t-20" action="<?=$this->domain()?>/school-manager/create-class" method="post">
+                                <form class="form-horizontal p-t-20" action="<?=host()?>/school-manager/create-class" method="post">
                                     <div><span style="color: dodgerblue">Note:</span> The Class level should be assigned in this manner, lowest class in your school gets the lowest class level and vice versa.</div>
                                     <div class="form-group row">
                                         <label for="class" class="col-sm-3 control-label">Class*</label>
@@ -142,7 +142,7 @@
                     function deleteClass(id)
                     {
                         if(confirm("This action can't be reverted. Deleting a class would delete every fees associated with the class. Are you sure you want to delete?")){
-                            window.location.href='<?=$this->domain()?>' + '/school-manager/delete-class/' + id;
+                            window.location.href='<?=host()?>' + '/school-manager/delete-class/' + id;
                             return true;
                         }
                     }
@@ -152,4 +152,4 @@
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-    <?php require_once 'app/views/school/includes/footer.php'; ?>
+    <?php require_once '../app/views/school/includes/footer.php'; ?>

@@ -20,7 +20,8 @@
             'school' => 'school_sess',
             'admin' => 'admin_sess',
             'token_name' => 'token',
-            'error' => 'errors'
+            'error' => 'errors',
+            'expiry' => 86400
         ),
         'default' => array(
             'project_title' => 'Fees Management',
@@ -40,7 +41,7 @@
         'register' => 'RegisterController',
         'login' => 'LoginController',
         'forgot-password' => 'ForgotPasswordController',
-        'home' => 'HomeController',
+        'front' => 'FrontController',
         'admin' => 'AdminController',
         'school' => 'SchoolsController',
         'guardian' => 'GuardiansController',

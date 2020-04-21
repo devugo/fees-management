@@ -41,7 +41,7 @@
     <!-- ============================================================== -->
     
     <section id="wrapper">
-        <div class="login-register" style="background-color: grey; background-image:url();">
+        <div class="login-register" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../images/background/login-register.jpg') !important;">
             <?=Session::flash('flash')?>
             <!--<div class="alert alert-success" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

@@ -1,8 +1,8 @@
 <?php $page_title = 'Payments'; ?>
 
-<?php require_once 'app/views/school/includes/header.php'; ?>
+<?php require_once '../app/views/school/includes/header.php'; ?>
 
-<?php require_once 'app/views/school/includes/sidebar.php'; ?>
+<?php require_once '../app/views/school/includes/sidebar.php'; ?>
 
     
         <!-- Page wrapper  -->
@@ -379,7 +379,7 @@
             
         
 
-        <?php require_once 'app/views/school/includes/footer.php'; ?>
+        <?php require_once '../app/views/school/includes/footer.php'; ?>
 
         <!--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

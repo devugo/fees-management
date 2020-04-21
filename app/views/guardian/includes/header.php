@@ -81,7 +81,7 @@
                         <span>
                          <!-- dark Logo text -->
                          <!-- Light Logo text -->    
-                         SCHOOLBILLS.COM.NG</span> </a>
+                         FEES MANAGEMENT</span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
